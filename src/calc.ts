@@ -15,25 +15,14 @@ export class Calculator {
         if (!(isNaN(first) || isNaN(second))) {
             switch (operation) {
                 case '+':
-                    if (operation == '+') {
-                        return this.sum(first, second)
-                    }
-                    break;
+                        return Number(this.sum(first, second))
+
                 case '-':
-                    if (operation == '-') {
-                        return this.minus(first, second)
-                    }
-                    break;
+                        return Number(this.minus(first, second))
                 case '*':
-                    if (operation == '*') {
-                        return this.multiply(first, second)
-                    }
-                    break;
+                        return Number(this.multiply(first, second))
                 case '/':
-                    if (operation == '/') {
-                        return this.divide(first, second)
-                    }
-                    break;
+                        return Number(this.divide(first, second))
             }
         } else {
             return Error("Invalid value");
