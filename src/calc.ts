@@ -16,7 +16,6 @@ export class Calculator {
             switch (operation) {
                 case '+':
                         return Number(this.sum(first, second))
-
                 case '-':
                         return Number(this.minus(first, second))
                 case '*':
