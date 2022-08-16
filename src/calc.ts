@@ -26,7 +26,6 @@ export class Calculator {
         } else {
             return Error("Invalid value");
         }
-
     }
     public parser(str: string) {
         str = str.trim();
